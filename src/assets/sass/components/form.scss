@@ -1,0 +1,15 @@
+.c-form {
+    display: flex;
+    align-items: flex-start;
+}
+
+.c-form__row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    > * {
+        flex: 0 1 auto;
+        margin-right: spacing("small");
+        margin-left: spacing("small");
+    }
+}

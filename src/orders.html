@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الطلبات</title>
+</head>
+<body>
+    <div class="page-container">
+        <sidebar></sidebar>
+        <div class="single-page">
+            <header class="page-header">
+                <h1 class="page-title">الطلبات</h1>
+            </header>
+            <div class="c-table c-table--select-all">
+                <header class="c-table__header">
+                    <h3 class="c-table__title">الطلبات</h3>
+                    <div class="c-table__actions">
+                        <button class="c-btn c-btn--primary c-btn--slim">تم الشحن</button>
+                        <button class="c-btn c-btn--slim">تتم المعالجة</button>
+                        <button class="c-btn c-btn--destructive c-btn--slim">حذف</button>
+                    </div>
+                    <div class="c-table__navigation">
+                        <span class="c-table__navigation__caption">6 من أصل 24</span>
+                        <div class="c-table__navigation__arrows">
+                            <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-right2"></i></button>
+                            <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-left2"></i></button>
+                        </div>
+                    </div>
+                </header>
+                <table class="c-table__data">
+                    <thead>
+                        <tr>
+                            <th>
+                                <input type="checkbox" id="sellect-all">
+                                <label for="sellect-all">تحديد الكل</label>
+                            </th>
+                            <th>
+                                <label for="select-all">تحديد الكل</label>
+                            </th>
+                            <th>اسم المنتج</th>
+                            <th>المشتري</th>
+                            <th>بلد الشحن</th>
+                            <th>القيمة</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="c-list c-list--table-row">
+                            <td><input type="checkbox" id="item-1" name="item-1"></td>
+                            <td><img class="c-list__media" src="assets/images/black-shirt.jpg" alt=""></td>
+                            <td>قميص أسود</td>
+                            <td>علي جابر</td>
+                            <td>دمشق، سوريا</td>
+                            <td>$19.99</td>
+                            <td>
+                                <div class="c-list__actions">
+                                    <a href="#" class="c-btn c-btn--primary c-btn--slim">تم الشحن</a>
+                                    <a href="#" class="c-btn c-btn--slim">تواصل</a>
+                                    <a href="#" class="c-btn c-btn--destructive c-btn--slim">حذف الطلب</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="c-list c-list--table-row">
+                            <td><input type="checkbox" id="item-1" name="item-2"></td>
+                            <td><img class="c-list__media" src="assets/images/black-pants.jpg" alt=""></td>
+                            <td>بنطلون أسود</td>
+                            <td>أحمد مرزوق</td>
+                            <td>حلب، سوريا</td>
+                            <td>$24.99</td>
+                            <td>
+                                <div class="c-list__actions">
+                                    <a href="#" class="c-btn c-btn--primary c-btn--slim">تم الشحن</a>
+                                    <a href="#" class="c-btn c-btn--slim">تواصل</a>
+                                    <a href="#" class="c-btn c-btn--destructive c-btn--slim">حذف الطلب</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="c-list c-list--table-row">
+                            <td><input type="checkbox" id="item-1" name="item-3"></td>
+                            <td><img class="c-list__media" src="assets/images/brown-shoe.jpg" alt=""></td>
+                            <td>حذاء جلد</td>
+                            <td>ماهر كريم</td>
+                            <td>القاهرة، مصر</td>
+                            <td>$341.97</td>
+                            <td>
+                                <div class="c-list__actions">
+                                    <a href="#" class="c-btn c-btn--primary c-btn--slim">تم الشحن</a>
+                                    <a href="#" class="c-btn c-btn--slim">تواصل</a>
+                                    <a href="#" class="c-btn c-btn--destructive c-btn--slim">حذف الطلب</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="c-list c-list--table-row">
+                            <td><input type="checkbox" id="item-1" name="item-4"></td>
+                            <td><img class="c-list__media" src="assets/images/running-shoe.jpg" alt=""></td>
+                            <td>حذاء جري</td>
+                            <td>ماهر علي ماهر</td>
+                            <td>مسقط، سلطنة عمان</td>
+                            <td>$159.99</td>
+                            <td>
+                                <div class="c-list__actions">
+                                    <a href="#" class="c-btn c-btn--primary c-btn--slim">تم الشحن</a>
+                                    <a href="#" class="c-btn c-btn--slim">تواصل</a>
+                                    <a href="#" class="c-btn c-btn--destructive c-btn--slim">حذف الطلب</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="c-list c-list--table-row">
+                            <td><input type="checkbox" id="item-1" name="item-5"></td>
+                            <td><img class="c-list__media" src="assets/images/dw-watch.jpg" alt=""></td>
+                            <td>ساعة daniel wellington</td>
+                            <td>فهد الشهيري</td>
+                            <td>أبها، السعودية</td>
+                            <td>$478.13</td>
+                            <td>
+                                <div class="c-list__actions">
+                                    <a href="#" class="c-btn c-btn--primary c-btn--slim">تم الشحن</a>
+                                    <a href="#" class="c-btn c-btn--slim">تواصل</a>
+                                    <a href="#" class="c-btn c-btn--destructive c-btn--slim">حذف الطلب</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <footer class="c-table__footer">
+                    <div class="c-table__navigation">
+                        <span class="c-table__navigation__caption">6 من أصل 24</span>
+                        <div class="c-table__navigation__arrows">
+                            <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-right2"></i></button>
+                            <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-left2"></i></button>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <help></help>
+        </div>
+    </div>
+</body>
+</html>

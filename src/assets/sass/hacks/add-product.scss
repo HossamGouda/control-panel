@@ -1,0 +1,14 @@
+.c-upload + .c-form__controls {
+    width: 500px;
+    margin-right: spacing("wide");
+}
+
+@media (max-width: $bp-desktop-small) {
+    .c-form {
+        flex-wrap: wrap;
+    }
+
+    .c-upload + .c-form__controls {
+        margin-right: 0;
+    }
+}

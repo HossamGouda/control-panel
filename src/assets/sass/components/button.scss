@@ -1,0 +1,65 @@
+.c-btn {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    color: $color-content;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: $color-white;
+    border: 1px solid darken($color-white, 15%);
+    box-shadow: 0 1px 0 0 rgba( darken($color-primary, 30%), 0.05 );
+    white-space: pre;
+    &:focus{
+        outline: none;
+        border: 2px solid $color-primary;
+    }
+    &:hover{
+        background-color: darken($color-white, 3%);
+    }
+}
+
+.c-btn--primary {
+    color: $color-white;
+    background-color: $color-primary;
+    border-color: darken($color-primary, 5%);
+    &:hover{
+        background-color: darken($color-primary, 5%);
+    }
+    &:focus{
+        border-color: darken($color-primary, 10%);
+    }
+}
+
+.c-btn--destructive {
+    color: $color-white;
+    background-color: $color-red;
+    border-color: darken($color-red, 5%);
+    &:hover{
+        background-color: darken($color-red, 5%);
+    }
+}
+
+.c-btn--ghost {
+    color: $color-content;
+    background-color: transparent;
+    border-color: $color-content;
+    &:hover{
+        background-color: transparent;
+    }
+}
+
+.c-btn--slim {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.c-btn--icon {
+    font-size: 20px;
+    width: 40px;
+    height: 36px;
+    text-align: center;
+    padding: 0;
+}

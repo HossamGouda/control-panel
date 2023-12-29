@@ -1,0 +1,88 @@
+$color-banner: #47c1bf;
+$color-banner-light: #b7ecec;
+$color-banner-lighter: #e0f5f5;
+$color-banner-dark: #00848e;
+$icon-size: 32px;
+
+.c-banner{
+    @include e-card;
+    background-color: $color-banner-lighter;
+    border-top: 3px solid $color-banner-dark;
+    padding: spacing("small") spacing("extra-wide");
+    position: relative
+}
+
+.c-banner__title{
+    color: $color-title-subdued;
+    font-weight: normal;
+}
+
+.c-banner__desc {
+    font-size: 14px;
+}
+
+.c-banner__action {
+    color: $color-text-subdued;
+    border-color: $color-text-subdued;
+}
+
+.c-banner__close,
+.c-banner__icon {
+  position: absolute;
+  top: spacing("small");
+}
+
+.c-banner__close {
+   left: spacing("normal");
+   cursor: pointer;
+}
+
+.c-banner__icon {
+  right: spacing("normal");
+  color: $color-banner-dark;
+  background: $color-banner-light;
+  border-radius: 50%;
+  width: $icon-size;
+  height: $icon-size;
+  line-height: $icon-size!important;
+  text-align: center;
+}
+
+.c-banner > * {
+    transform: opacity 200ms ease;
+}
+
+.c-banner {
+    transition: transform 400ms ease-out 300ms;
+}
+
+.c-banner.collapse > * {
+    opacity: 0;
+}
+
+.c-banner.collapse {
+    transform: scaleY(0);
+    transform-origin: 50% 0;
+}
+
+//responsive
+
+@media (max-width: $bp-phone-normal) {
+    .c-banner {
+        padding-left: spacing("small");
+        padding-right: spacing("small");
+    }
+
+    .c-banner__icon {
+        right: spacing("small");
+    }
+
+    .c-banner__close {
+        left: spacing("small");
+    }
+
+    .c-banner__title {
+        margin-left: spacing("normal");
+        margin-right: $icon-size + spacing("extra-small");
+    }
+}

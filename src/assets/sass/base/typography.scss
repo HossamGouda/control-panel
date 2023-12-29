@@ -1,0 +1,22 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: $family-heading;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+h1{
+    font-size: 42px;
+}
+
+h2{
+    font-size: 28px;
+}
+
+h3{
+    font-size: 17px;
+}
+
+p, span{
+    font-family: $family-content;
+    font-weight: normal;
+}

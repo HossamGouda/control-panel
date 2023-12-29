@@ -1,0 +1,7 @@
+@mixin e-card {
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px 0 rgba(darken($color-primary, 30%), 0.15),
+                0 0 0 1px rgba(darken($color-primary, 30%), 0.05);
+    margin-bottom: spacing("normal");
+}
